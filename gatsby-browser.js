@@ -6,8 +6,8 @@
 
 // You can delete this file if you're not using it
 
-exports.onRouteUpdate = ({ location, prevLocation }) => {
-  if (location.pathname === "/resume") {
+exports.onRouteUpdate = ({ location }) => {
+  if (location.pathname.includes("/resume")) {
     setTimeout(_ => (window.location.href = process.env.GATSBY_RESUME_URL), 999)
   }
 }
