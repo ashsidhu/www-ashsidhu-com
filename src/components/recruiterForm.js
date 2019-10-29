@@ -22,7 +22,7 @@ const RecruiterForm = _ => (
       <input required placeholder="Your email" type="email" name="email" />
     </div>
     <div>
-      <button type="submit">View Résumé</button>
+      <button type="submit">View Résumé &#8227;</button>
     </div>
   </form>
 )
