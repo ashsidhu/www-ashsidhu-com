@@ -5,6 +5,8 @@ html {
 }
 body {
   margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -41,6 +43,7 @@ template {
 }
 a {
   color: #fca311;
+  line-height: 36px;
   background-color: transparent;
   -webkit-text-decoration-skip: objects;
 }
@@ -106,13 +109,15 @@ hr {
   height: 0;
   overflow: visible;
 }
+
+/* forms */
 button,
 input,
 optgroup,
 select,
 textarea {
   font: inherit;
-  margin: 0;
+  margin: 2em 0 0em 0;
 }
 optgroup {
   font-weight: 700;
@@ -120,6 +125,15 @@ optgroup {
 button,
 input {
   overflow: visible;
+  width: 100%;
+  max-width: 420px;
+  height: 2.4em;
+  border-radius: 0.4em;
+  border: 2px #fca311 solid;
+  color: #fca311;
+  box-shadow: none;
+  background-color: transparent;
+  text-align: center;
 }
 button,
 select {
@@ -177,14 +191,15 @@ textarea {
 [type="search"]::-webkit-search-decoration {
   -webkit-appearance: none;
 }
-::-webkit-input-placeholder {
-  color: inherit;
+::placeholder, ::-webkit-input-placeholder {
+  color: #838181;
   opacity: 0.54;
 }
 ::-webkit-file-upload-button {
   -webkit-appearance: button;
   font: inherit;
 }
+
 html {
   font: 112.5%/1.45em georgia, serif;
   box-sizing: border-box;
@@ -200,9 +215,10 @@ html {
   box-sizing: inherit;
 }
 body {
-  color: #F9F8F8;
+  color: #f9f8f8;
   background: #3a393a;
-  font-family: georgia, serif;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+  Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   font-weight: normal;
   text-align: center;
   word-wrap: break-word;
@@ -233,9 +249,7 @@ h1 {
   padding-top: 0;
   margin-bottom: 1.45rem;
   color: inherit;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-  font-weight: bold;
+  font-weight: lighter;
   text-rendering: optimizeLegibility;
   font-size: 2.25rem;
   line-height: 1.1;
@@ -250,9 +264,7 @@ h2 {
   padding-top: 0;
   margin-bottom: 1.45rem;
   color: inherit;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-  font-weight: bold;
+  font-weight: lighter;
   text-rendering: optimizeLegibility;
   font-size: 1.62671rem;
   line-height: 1.1;
@@ -267,9 +279,7 @@ h3 {
   padding-top: 0;
   margin-bottom: 1.45rem;
   color: inherit;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-  font-weight: bold;
+  font-weight: lighter;
   text-rendering: optimizeLegibility;
   font-size: 1.38316rem;
   line-height: 1.1;
@@ -284,8 +294,6 @@ h4 {
   padding-top: 0;
   margin-bottom: 1.45rem;
   color: inherit;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   font-weight: bold;
   text-rendering: optimizeLegibility;
   font-size: 1rem;
@@ -301,8 +309,6 @@ h5 {
   padding-top: 0;
   margin-bottom: 1.45rem;
   color: inherit;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   font-weight: bold;
   text-rendering: optimizeLegibility;
   font-size: 0.85028rem;
@@ -318,8 +324,6 @@ h6 {
   padding-top: 0;
   margin-bottom: 1.45rem;
   color: inherit;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   font-weight: bold;
   text-rendering: optimizeLegibility;
   font-size: 0.78405rem;
@@ -455,6 +459,10 @@ form {
   padding-right: 0;
   padding-top: 0;
   margin-bottom: 1.45rem;
+}
+footer {
+  color: #838181;
+  margin-top: 1rem;
 }
 noscript {
   margin-left: 0;
@@ -622,4 +630,23 @@ pre tt:after {
   html {
     font-size: 100%;
   }
+}
+
+.dark-tangerine {
+  color: #fca311;
+}
+.platinum {
+  color: #e5e5e5;
+}
+.rusty-red {
+  color: #db2b39;
+}
+.ghost-white {
+  color: #f9f8f8;
+}
+.onyx {
+  color: #3a393a;
+}
+.trolley-grey {
+  color: #838181;
 }

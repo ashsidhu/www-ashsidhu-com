@@ -3,7 +3,7 @@ import React from "react"
 
 const Footer = ({ siteTitle }) => (
   <footer>
-    © {siteTitle}, {new Date().getFullYear()}
+    <h6>© {siteTitle}, {new Date().getFullYear()}</h6>
   </footer>
 )
 
