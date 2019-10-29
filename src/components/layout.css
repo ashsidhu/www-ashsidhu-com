@@ -40,6 +40,7 @@ template {
   display: none;
 }
 a {
+  color: #fca311;
   background-color: transparent;
   -webkit-text-decoration-skip: objects;
 }
@@ -199,9 +200,11 @@ html {
   box-sizing: inherit;
 }
 body {
-  color: hsla(0, 0%, 0%, 0.8);
+  color: #F9F8F8;
+  background: #3a393a;
   font-family: georgia, serif;
   font-weight: normal;
+  text-align: center;
   word-wrap: break-word;
   font-kerning: normal;
   -moz-font-feature-settings: "kern", "liga", "clig", "calt";
