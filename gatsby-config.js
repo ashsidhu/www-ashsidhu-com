@@ -18,13 +18,14 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `gatsby-starter-default`,
-        short_name: `starter`,
+        name: `Ashmeet Sidhu`,
+        short_name: `Ashmeet Sidhu`,
         start_url: `/`,
-        background_color: `#DB2B39`,
+        background_color: `#3A393A`,
         theme_color: `#DB2B39`,
-        display: `minimal-ui`,
-        icon: `src/images/Ashmeet.jpg`, // This path is relative to the root of the site.
+        display: `standalone`,
+        icon: `src/images/Ashmeet.jpg`,
+        // cache_busting_mode: `query` by default
       },
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality
